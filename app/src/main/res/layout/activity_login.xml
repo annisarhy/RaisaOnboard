@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.LoginActivity"
+    android:background="#FFF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="PPSDM Mobile App"
+                android:textSize="20sp"
+                android:fontFamily="@font/muli_bold"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rumah Informasi Geominerba"
+                android:textSize="18sp"
+                android:fontFamily="@font/muli" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@mipmap/img_undraw_login" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please type your email and password to enter"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp" />
+
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/editText_email"
+                android:drawableStart="@drawable/ic_account_outline"
+                android:hint="Masukan Email"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" />
+
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/editText_password"
+                android:drawableStart="@drawable/ic_lock_outline"
+                android:hint="Masukan Password"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="30dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log in"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+                <Button
+                    android:onClick="BtnLogin"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_login"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_btn_login" />
+            </LinearLayout>
+
+            <TextView
+                android:onClick="Register"
+                android:id="@+id/tv_signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#FF7F00"
+                android:textStyle="bold"
+                android:text="Don't you have an account? Create Here" />
+
+            <TextView
+                android:id="@+id/tv_ppsdm"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2019. PPSDM Geominerba"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kementrian Energi dan Sumber Daya Mineral"
+                android:textColor="#000"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RaisaVer2</string>
+    <string-array name="JenisKelamin">
+        <item>Wanita</item>
+        <item>Pria</item>
+    </string-array>
+    <string name="title_activity_fragment">Fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_agenda">Agenda</string>
+    <string name="title_profile">Profile</string>
+
+</resources>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    tools:context=".Auth.RegisterActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Register PPSDM Mobile App"
+                android:textSize="20sp"
+                android:fontFamily="@font/muli_bold"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rumah Informasi Geominerba"
+                android:textSize="18sp"
+                android:fontFamily="@font/muli" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@mipmap/img_undraw_signin" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap (dengan gelar)"
+                android:textColor="#000" />
+
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/editText_name"
+                android:drawableStart="@drawable/ic_account_outline"
+                android:hint="Your Name"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Nomer Identitas"
+                android:textColor="#000" />
+
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/editText_nip"
+                android:drawableStart="@drawable/ic_number"
+                android:hint="NIP/NIK/No KTP"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Perusahaan"
+                android:textColor="#000" />
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edittext"
+                android:id="@+id/perusahaan_field"
+                android:layout_width="300dp"
+                android:layout_height="44dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textColor="#000" />
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:id="@+id/registrasi_jenis_kelamin"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:autofillHints="JenisKelamin"
+                android:entries="@array/JenisKelamin"
+                android:overlapAnchor="false"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Nomor Handphone"
+                android:textColor="#000" />
+
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/editText_phone"
+                android:drawableStart="@drawable/ic_phone"
+                android:hint="Masukan Nomor Handphone"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Email anda"
+                android:textColor="#000" />
+
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/editText_email"
+                android:drawableStart="@drawable/ic_email"
+                android:hint="Masukan Email"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Set Password"
+                android:textColor="#000" />
+
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/editText_password"
+                android:drawableStart="@drawable/ic_lock_outline"
+                android:hint="Masukan Password"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Ulangi Password"
+                android:textColor="#000" />
+
+            <EditText
+                android:gravity="center_vertical"
+                android:id="@+id/editText_Rpassword"
+                android:drawableStart="@drawable/ic_repeat_password"
+                android:hint="Ulangi Password"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext" />
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#FF7F00"
+                    android:text="I Agree with the"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/text_term_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Term Condition"
+                    android:textColor="#FF7F00" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginEnd="30dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+                <Button
+                    android:onClick="BtnRegister"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btn_login"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_btn_login" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:onClick="Login"
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="#FF7F00"
+                android:textStyle="bold"
+                android:text="Have an account? Click Here" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
